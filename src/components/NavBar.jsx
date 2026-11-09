@@ -26,11 +26,9 @@ export default function NavBar({ theme, onToggleTheme }) {
         <NavLink to="/products" className={({ isActive }) => isActive ? "active" : ""}>
           Products
         </NavLink>
-        {user && (
-          <NavLink to="/cart" className={({ isActive }) => isActive ? "active" : ""}>
-            Cart <span className="cart-count">{itemCount}</span>
-          </NavLink>
-        )}
+        <NavLink to="/cart" className={({ isActive }) => isActive ? "active" : ""}>
+          Cart <span className="cart-count">{itemCount}</span>
+        </NavLink>
       </nav>
 
       <div className="nav-actions">
